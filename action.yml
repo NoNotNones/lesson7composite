@@ -9,6 +9,10 @@ inputs:
     required: true
     default: 0
 
+outputs:
+  result:
+    description: Sum of number1 and number2
+    value: ${{ steps.sum-result.outputs.result }}
 
 runs:
   using: composite
